@@ -1,38 +1,209 @@
-.App {
-  text-align: center;
+body {
+	margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+	background-color: rgb(85, 85, 85);
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	height: 100px;
+	width: 100vw;
+	margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+	font-size: 50px;
+	display: flex;
+	align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*! ★━━─ ╭─━━━━━─╯ ·٠•●♥ Ƹ̵̡Ӝ̵̨̄Ʒ ♥●•٠·˙ JOBs ITEMS ˙·٠•●♥ Ƹ̵̡Ӝ̵̨̄Ʒ ♥●•٠·˙ ╰─━━━━━─╮ ─━━★ */
+
+.container {
+	/*border: 2px solid rgb(0, 170, 255);*/
+	margin: 0 auto;
+	width: 60vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.item {
+	width: 200px;
+	height: 200px;
+	background-color: #ffffff;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	/*padding-bottom: 20px;*/
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	padding: 5px 10px;
 }
+
+.contractInfo {
+	font-size: 15px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+.pink {
+	border: 3px solid rgb(234, 104, 197);
+}
+.yellow {
+	border: 3px solid rgb(255, 234, 2);
+}
+
+.green {
+	border: 3px solid rgb(100, 230, 0);
+}
+
+.blue {
+	border: 3px solid rgb(0, 170, 255);
+}
+
+.red {
+	border: 3px solid rgb(231, 28, 1);
+}
+
+/*! ★━━─ ╭─━━━━━─╯ ·٠•●♥ Ƹ̵̡Ӝ̵̨̄Ʒ ♥●•٠·˙ FOOTER ˙·٠•●♥ Ƹ̵̡Ӝ̵̨̄Ʒ ♥●•٠·˙ ╰─━━━━━─╮ ─━━★ */
+
+.footer {
+	background-color: #b5b3b3;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	width: 100vw;
+	margin-top: 30px;
+}
+
+/*! ★━━─ ╭─━━━━━─╯ ·٠•●♥ Ƹ̵̡Ӝ̵̨̄Ʒ ♥●•٠·˙ MEDIA QUERIES ˙·٠•●♥ Ƹ̵̡Ӝ̵̨̄Ʒ ♥●•٠·˙ ╰─━━━━━─╮ ─━━★ */
+
+/* ▼ ◇─◇──◇────◇╰⊱♥⊱╮ღ꧁✧ @MEDIA 1300px ✧꧂ღ╭⊱♥≺◇─────◇──◇─◇ */
+
+@media (min-width: 1300px) {
+	.container {
+		width: 80vw;
+		gap: 30px;
+		padding: 20px 0;
+	}
+	
+	.item {
+		width: 300px;
+		height: 300px;
+	}
+	
+	h3 {
+		padding: 10px 20px;
+		font-size: 30px;
+	}
+	
+	.contractInfo {
+		font-size: 25px;
+		padding: 10px 20px;
+	}
+
+} /* ▲ ◇─◇──◇────◇╰⊱♥⊱╮ღ꧁✧ @MEDIA 1300px ✧꧂ღ╭⊱♥≺◇─────◇──◇─◇ */
+
+/* ▼ ◇─◇──◇────◇╰⊱♥⊱╮ღ꧁✧ @MEDIA 1093px ✧꧂ღ╭⊱♥≺◇─────◇──◇─◇ */
+
+@media (max-width: 1093px) {
+	.container {
+		width: 80vw;
+	}
+
+} /* ▲ ◇─◇──◇────◇╰⊱♥⊱╮ღ꧁✧ @MEDIA max 1093px ✧꧂ღ╭⊱♥≺◇─────◇──◇─◇ */
+
+/* ▼ ◇─◇──◇────◇╰⊱♥⊱╮ღ꧁✧ @MEDIA 970px ✧꧂ღ╭⊱♥≺◇─────◇──◇─◇ */
+
+@media (max-width: 970px) {
+	.item {
+		width: 180px;
+		height: 180px;
+	}
+}
+
+/* ▼ ◇─◇──◇────◇╰⊱♥⊱╮ღ꧁✧ @MEDIA 745px ✧꧂ღ╭⊱♥≺◇─────◇──◇─◇ */
+
+@media (max-width: 745px) {
+	.container {
+		width: 90vw;
+	}
+} 
+
+/* ▼ ◇─◇──◇────◇╰⊱♥⊱╮ღ꧁✧ @MEDIA max 669 px ✧꧂ღ╭⊱♥≺◇─────◇──◇─◇ */
+
+@media (max-width: 669px) {
+	.header {
+		height: 10vh;
+	}
+
+	h1 {
+		font-size: 27px;
+	}
+
+	.container {
+		width: 95vw;
+		gap: 15px;
+	}
+
+	h3 {
+		font-size: 13px;
+	}
+
+	.item {
+		width: 140px;
+		height: 140px;
+	}
+	.contractInfo {
+		font-size: 16px;
+	}
+
+} /* ▲ ◇─◇──◇────◇╰⊱♥⊱╮ღ꧁✧ @MEDIA max 669px ✧꧂ღ╭⊱♥≺◇─────◇──◇─◇ */
+
+/* ▼ ◇─◇──◇────◇╰⊱♥⊱╮ღ꧁✧ @MEDIA max 525 px ✧꧂ღ╭⊱♥≺◇─────◇──◇─◇ */
+
+@media (max-width: 525px) {
+	.header { 
+		height: 7vh;
+	}
+
+	h1 {
+		font-size: 21px;
+	}
+
+	.container {
+		width: 100vw;
+		gap: 9px;
+	}
+
+	h3 {
+		font-size: 16px;
+		margin: 0; 
+		padding: 0;
+	}
+
+	.item {
+		width: 140px;
+		height: 140px;
+		padding: 8px;
+	}
+
+	.contractInfo {
+		font-size: 17px;
+		padding-left: 0px;
+		margin-bottom: 0px;
+	}
+
+} /* ▲ ◇─◇──◇────◇╰⊱♥⊱╮ღ꧁✧ @MEDIA max 525 px ✧꧂ღ╭⊱♥≺◇─────◇──◇─◇ */
